@@ -1,0 +1,33 @@
+<div class='container'>
+
+  <h1>Best Movies...</h1>
+   <button (click)='onToggle()'  class='btn btn-sm btn-primary' >{{toggleButtonText}}</button>
+    <table class='table table-condensed table-striped table-hover table-inverse' >
+      <thead>
+        <tr>
+          <th *ngIf='!hideImages' >
+
+          </th>
+          <th>Title</th>
+          <th>Imdb Rating</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let movie of movies"    >
+          <td *ngIf='!hideImages' >
+            <img [hidden] = 'hideImages'   src ='{{movie.Poster}}' width="20%" />
+          </td>
+          <td>{{movie.Title}}</td>
+          <td>{{movie.imdbRating}}</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Total Movies : {{movies.length}}</p>
+
+
+</div>
+

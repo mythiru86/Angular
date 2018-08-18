@@ -1,0 +1,25 @@
+
+<script>
+
+    function avg(count){
+        
+        var sum=0;
+        //arguments[0] --> count
+
+        for( var i=1;i<=count;i++)
+            sum+=arguments[i];
+
+        return sum/count;
+
+
+    }
+
+    console.log('avg(3, 2,9,9)',avg(3, 2,9,9));
+    console.log('avg(2, 8,8,9,1)',avg(2, 8,8,9,1));
+    console.log('avg(3, 8,2,9,11,1)',avg(3, 8,2,9,11,1));
+    
+    
+    
+
+
+</script>

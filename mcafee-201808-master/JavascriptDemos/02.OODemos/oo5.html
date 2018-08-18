@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OO Javascript</title>
+</head>
+<body>
+    <h1>Object Oriented Javascript</h1>
+
+    <script>
+    
+        
+        var pt=new Object();
+        pt.x=3;
+        pt.y=4;
+        //we can attach a behavior
+        pt.toString=function(){
+            return 'Point('+this.x+','+this.y+')';
+        }
+
+        pt.show=function (){      
+            console.log(this.toString());
+        };
+
+        pt.distance=function(p2){
+            var dx= p2.x-this.x;
+            var dy=p2.y-this.y;
+            return Math.sqrt(dx*dx+dy*dy);
+        }
+
+        
+        
+
+        var origin={x:0,y:0};
+
+        var d= pt.distance(origin);
+
+        console.log('distance between '+pt+' and '+origin+' is '+d);
+
+        var d2= origin.distance(pt);
+
+        console.log('distance between '+orgin+' and '+pt+' is '+d2);
+
+    </script>
+    
+</body>
+</html>
