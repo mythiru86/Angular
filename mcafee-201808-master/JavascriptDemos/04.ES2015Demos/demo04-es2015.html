@@ -1,0 +1,29 @@
+
+<script>
+
+    function avg(...numbers){
+        
+        var sum=0;
+
+        for( var i=0;i<numbers.length;i++)
+            sum+=numbers[i];
+
+        return sum/numbers.length;
+    }
+    console.log('avg(5,15,1)',avg(5,15,1));
+
+    var values=[8,2,5];
+
+    var avgValue= avg(values);
+
+    console.log(`average of ${values} is ${avgValue}`);
+
+    var avgValue2= avg(...values); //spread values as individual parameter
+
+    console.log(`average of ${values} is ${avgValue2}`);
+    
+    
+    
+
+
+</script>

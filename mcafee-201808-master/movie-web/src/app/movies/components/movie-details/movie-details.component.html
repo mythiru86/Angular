@@ -1,0 +1,35 @@
+
+<div class="container">
+
+  <h1>{{movie.Title | uppercase}}</h1>
+
+  <div class="row">
+
+    <div class="col-md-5">
+
+      <ul>
+          <li>ImdbId: {{movie.imdbID}}</li>
+          <li>Type: {{movie.Type}}</li>
+          <li>ImdbRating: {{movie.imdbRating}}</li>
+          <li>Box Office Collection: {{movie.BoxOffice | currency:'INR' }} million</li>
+          <li>Releae Date: {{movie.ReleaseDate | date:'EEEE, dd MMMM yyyy' | lowercase}}</li>
+          <li>Our Verdict: {{movie.imdbRating | movieVerdict:10 }}</li>
+      </ul>
+
+
+    </div>
+
+    <div class="col-md-7">
+      <img src="{{movie.Poster}}"
+           alt="{{movie.Title}}" srcset=""
+           >
+    </div>
+
+
+  </div>
+
+  {{movie|myJson}}
+
+
+</div>
+

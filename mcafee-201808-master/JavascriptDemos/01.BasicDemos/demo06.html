@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Javascript Demo</title>
+    
+</head>
+<body>
+    <h1>Look in Developer Console!!!</h1>
+    
+
+    <script>
+        function check(value){
+            if(value)
+                console.log(value,true);
+            else
+                console.log(value,false);
+        }
+
+        check(2>1);
+        check(true);
+        check(false);
+        check(4<2);
+
+        check(20);
+        check(-1);
+        check(0.5);
+        check(0);
+
+        check('Hello');
+        check('');
+
+        check(new Date());
+
+        check(new Object());
+        check([]);
+
+        check(null);
+        check(parseInt('Hello'));
+        check(NaN);
+        check(undefined);
+        check(10/0);
+        check(0/10);
+
+
+    </script>
+</body>
+</html>

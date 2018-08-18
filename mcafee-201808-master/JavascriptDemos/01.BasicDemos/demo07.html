@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Javascript Demo</title>
+    
+</head>
+<body>
+    <h1>Look in Developer Console!!!</h1>
+    
+
+    <script>
+
+            var array1=new Array(); //create an empty array
+            
+            var array2=[] ; //shortcut for an empty array
+
+
+
+            var array3=[2,3,9,2,5]; //shortcut for creating an initialized array
+
+            console.log('array1.length',array1.length);
+            console.log('array2.length',array2.length);
+            console.log('array3.length',array3.length);
+            
+
+
+            for(var i=0; i<array3.length;i++){
+                array1.push( array3[i]);
+                array2.push(array3[array3.length-i-1]);                
+            }
+
+            array1.push("Hello World");
+
+            console.log('array1',array1);
+            console.log('array2',array2);
+            
+
+
+    </script>
+</body>
+</html>

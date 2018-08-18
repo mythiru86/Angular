@@ -1,0 +1,28 @@
+
+<script>
+
+    var plus= (x,y)=>x+y;
+
+    console.log('plus(3,4)',plus(3,4));
+
+    var factorial=(n)=>{
+        let fn=1;
+        while(n>1)
+            fn*=n--;
+        return fn;
+    };
+
+    console.log('factorial(5)',factorial(5));
+
+
+    //var chkArgs= () => arguments.length;
+
+    //console.log('chkArgs(2,3,9)',chkArgs(2,3,9));
+    
+    var chkArgs2= (...x) => x.length;
+
+    console.log('chkArg2(2,3,9)',chkArgs2(2,3,9));
+
+   
+    
+</script>
